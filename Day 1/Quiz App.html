@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Are you too cool for school?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="#87ceeb">
+<h1>The Cool Kids Quiz</h1>
+<h2>Find out if you are among one.</h2>
+<div class="row">
+    <div class="column" style="background-color: lightsteelblue;">
+        <h3>Favorite color?</h3>
+        <label class="container">Green
+            <input type="checkbox" onchange="onChange(0)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Yellow
+            <input type="checkbox" onchange="onChange(1)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Red
+            <input type="checkbox" onchange="onChange(2)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">N/A
+            <input type="checkbox" onchange="onChange(3)">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <div class="column" style="background-color: #b0a9de;">
+        <h3>Favorite class?</h3>
+        <label class="container">Math
+            <input type="checkbox" onchange="onChange(0)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">English
+            <input type="checkbox" onchange="onChange(1)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Gym
+            <input type="checkbox" onchange="onChange(2)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">N/A
+            <input type="checkbox" onchange="onChange(3)">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="column" style="background-color: #b0a9de;">
+        <h3>Favorite sport?</h3>
+        <label class="container">Dancing
+            <input type="checkbox" onchange="onChange(0)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Soccer
+            <input type="checkbox" onchange="onChange(1)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Football
+            <input type="checkbox" onchange="onChange(2)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">N/A
+            <input type="checkbox" onchange="onChange(3)">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <div class="column" style="background-color: lightsteelblue;">
+        <h3>Favorite ice cream?</h3>
+        <label class="container">Choclate
+            <input type="checkbox" onchange="onChange(0)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Raspberry
+            <input type="checkbox" onchange="onChange(1)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Banana
+            <input type="checkbox" onchange="onChange(2)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">N/A
+            <input type="checkbox" onchange="onChange(3)">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="column" style="background-color: lightsteelblue;">
+        <h3>Favorite brand?</h3>
+        <label class="container">Adnameas
+            <input type="checkbox" onchange="onChange(0)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Reebok
+            <input type="checkbox" onchange="onChange(1)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Nike
+            <input type="checkbox" onchange="onChange(2)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">N/A
+            <input type="checkbox" onchange="onChange(3)">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <div class="column" style="background-color: #b0a9de;">
+        <h3>Favorite music genre?</h3>
+        <label class="container">Pop
+            <input type="checkbox" onchange="onChange(0)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">R&B
+            <input type="checkbox" onchange="onChange(1)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Rock
+            <input type="checkbox" onchange="onChange(2)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">N/A
+            <input type="checkbox" onchange="onChange(3)">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="column" style="background-color: #b0a9de;">
+        <h3>Favorite phrase?</h3>
+        <label class="container">YOLO
+            <input type="checkbox" onchange="onChange(0)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Word
+            <input type="checkbox" onchange="onChange(1)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Whatever
+            <input type="checkbox" onchange="onChange(2)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">N/A
+            <input type="checkbox" onchange="onChange(3)">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <div class="column" style="background-color: lightsteelblue;">
+        <h3>Favorite vnameeo game?</h3>
+        <label class="container">Minecraft
+            <input type="checkbox" onchange="onChange(0)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">League of Legends
+            <input type="checkbox" onchange="onChange(1)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Super Smash Bros.
+            <input type="checkbox" onchange="onChange(2)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">N/A
+            <input type="checkbox" onchange="onChange(3)">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="column" style="background-color: lightsteelblue;">
+        <h3>Favorite song?</h3>
+        <label class="container">R.Kelly - I believe I can fly
+            <input type="checkbox" onchange="onChange(0)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Beyonce - Single Ladies
+            <input type="checkbox" onchange="onChange(1)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Guns N' Roses - Sweet Child o Mine
+            <input type="checkbox" onchange="onChange(2)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">N/A
+            <input type="checkbox" onchange="onChange(3)">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <div class="column" style="background-color: #b0a9de;">
+        <h3>Favorite drink?</h3>
+        <label class="container">V8
+            <input type="checkbox" onchange="onChange(0)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Capri Sun
+            <input type="checkbox" onchange="onChange(1)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Gatorade
+            <input type="checkbox" onchange="onChange(2)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">N/A
+            <input type="checkbox" onchange="onChange(3)">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+</div>
+
+<button onclick="checked();" class="button"><span>Submit</span></button>
+
+<script type="text/javascript">
+    let checkboxes = document.querySelectorAll('[type=checkbox]');
+    let counts = Array.from({ length: checkboxes.length }).map(() => 0);
+
+    /*count the checked boxes*/
+    function onChange(idx) {
+        if (checkboxes[idx].checked) {
+            counts[idx]++;
+        }
+    }
+
+    /*check whether the correct choice is marked enough times */
+    function checked(){
+        if(counts[2]>5)
+            alert("You are a cool kid!");
+        else
+            alert("You are not a cool kid!");
+        location.reload();
+    }
+</script>
+</body>
+</html>
