@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #ee0005;
+    color: #fff;
+    font:24px Verdana,sans-serif;
+}
+/* style the main area*/
+.container{
+    height: 75%;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-25%);
+    margin: 50px auto;
+    overflow: hidden;
+    position: absolute;
+    width: 800px;
+    background: -webkit-gradient(linear,left bottom, left top, color-stop(0, #fff),color-stop(1, #6690d8));
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+/* falling snow */
+.fall_snow{
+    background-image: url('images/snow1.png'), url('images/snow2.png'), url('images/snow3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+}
+@keyframes snow{
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow{
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow{
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow{
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+/*style the tree*/
+.tree, .tree:before, .tree:after, .tree_bot, .tree_bot:before, .tree_bot:after{
+    height: 0px;
+    position: absolute;
+    width: 0px;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+}
+.tree{
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid green;
+    left: 390px;
+    top: 135px;
+}
+.tree:before{
+    content:'';
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid green;
+    left: -40px;
+    top: 15px;
+}
+.tree:after{
+    content:'';
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid green;
+    left: -60px;
+    top: 40px;
+}
+.tree_bot{
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid green;
+    left: 330px;
+    top: 210px;
+}
+.tree_bot:before{
+    content:'';
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid green;
+    left: -100px;
+    top: 40px
+}
+.tree_bot:after{
+    content:'';
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 120px solid green;
+    left: -120px;
+    top: 80px;
+}
+
+/* style the ornaments */
+.ball{
+    height: 40px;
+    left: 390px;
+    position: absolute;
+    top: 345px;
+    width: 40px;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    box-shadow: 0 0 5px #777;
+    -moz-box-shadow: 0 0 5px #777;
+    -webkit-box-shadow: 0 0 5px #777;
+}
+.red{
+    background-color: #c8171f;
+    background-image: -webkit-radial-gradient(circle, #f9d0be, #c8171f 70%);
+    background-image: -moz-radial-gradient(circle, #f9d0be, #c8171f 70%);
+    background-image: -o-radial-gradient(circle, #f9d0be, #c8171f 70%);
+    background-image: radial-gradient(circle, #f9d0be, #c8171f 70%);
+    left: 340px;
+    top: 325px;
+}
+.blue{
+    background-color: #00a1ee;
+    background-image: -webkit-radial-gradient(circle, #cde6f9, #00a1ee 70%);
+    background-image: -moz-radial-gradient(circle, #cde6f9, #00a1ee 70%);
+    background-image: -o-radial-gradient(circle, #cde6f9, #00a1ee 70%);
+    background-image: radial-gradient(circle, #cde6f9, #00a1ee 70%);
+}
+.green{
+    background-color: #4d8d00;
+    background-image: -webkit-radial-gradient(circle, #d1e5b2, #4d8d00 70%);
+    background-image: -moz-radial-gradient(circle, #d1e5b2, #4d8d00 70%);
+    background-image: -o-radial-gradient(circle, #d1e5b2, #4d8d00 70%);
+    background-image: radial-gradient(circle, #d1e5b2, #4d8d00 70%);
+    left: 440px;
+    top: 325px;
+}
+.rsmall, .gsmall, .bsmall{
+    height: 25px;
+    width: 25px;
+}
+.rsmall{
+    left: 440px;
+    top: 255px;
+}
+.bsmall{
+    left: 350px;
+    top: 255px;
+}
+.gsmall{
+    left: 395px;
+    top: 275px;
+}
+.tree_stump{
+    height: 50px;
+    width: 30px;
+    background-color: #964b00;
+    position: absolute;
+    left: 50%;
+    top: 58%
+}
+/* style the label */
+h1 {
+    color: #FAFAFA;
+    font: bold 60px 'Comic Sans MS',Arial;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.85), 4px 4px 0 #CFEAED;
+    text-transform: uppercase;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.bottom_snow{
+    position: absolute;
+    top: 64%;
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+}
