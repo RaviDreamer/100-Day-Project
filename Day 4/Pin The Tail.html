@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pin the tail on the donkey!</title>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/jquery-ui.js"></script>
+    <link rel="stylesheet" href="scripts/jquery-ui.css" />
+</head>
+<body>
+<h1>Pin the tail on the donkey!</h1>
+<div id="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">
+    <div id="donkey">
+        <img src="images/donkey.png">
+    </div>
+    <div id="tail">
+        <img src="images/donkeytail.png">
+    </div>
+</div>
+<script>
+
+    $(function() {
+        $( "#tail" ).draggable();
+    });
+
+</script>
+</body>
+</html>
