@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock, Papper, Scissors Game</title>
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Rock Papper Scissors</h1>
+    <img id='rock' src="images/rock.gif" onclick="clickedEvent(this.id)" style="cursor:pointer;">
+    <img id='paper' src="images/paper.gif" onclick="clickedEvent(this.id)" style="cursor:pointer;">
+    <img id='scissors' src="images/scissors.gif" onclick="clickedEvent(this.id)" style="cursor:pointer;">
+    <h1>Computer's Choice</h1>
+    <img id='cpuRock' src="images/rock.gif">
+    <img id='cpuPaper' src="images/paper.gif">
+    <img id='cpuScissors' src="images/scissors.gif">
+    <h1 id='winMsg'></h1>
+</div>
+<div class="scoreBox">
+    <h1>You: <span id="userScore"></span></h1>
+    <h1>CPU: <span id="cpuScore"></span></h1>
+    <h2><a href="javascript:restartGame();">Play Again?</a></h2>
+</div>
+<script src="scripts/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+a{
+    color: yellow;
+}
+body{
+    background-color: darkblue;
+}
+h1{
+    color: white;
+    text-align: center;
+    font: bold 60px 'Arial Black';
+}
+h2{
+    position: relative;
+    text-align: right;
+    top: -30px;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.scoreBox{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+}
