@@ -1,0 +1,59 @@
+body{
+    background-color: blueviolet;
+}
+.center {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 600px;
+    margin: auto;
+    position: absolute;
+    width: 600px;
+}
+.child {
+    background: #ce82ee;
+    bottom: 0;
+    height: 450px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+}
+
+#board {
+    border: 5px solid #000000;
+}
+
+.square{
+    width:150px;
+    height:150px;
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+}
+
+.v{
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+}
+
+.h{
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+}
+
+button {
+    font-family: Arial;
+}
+
+.bgGrey {
+    background-color: grey;
+}
