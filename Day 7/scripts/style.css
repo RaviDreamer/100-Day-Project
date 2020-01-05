@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    color: white;
+}
+.center{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    height: 600px;
+    width: 300px;
+    margin: auto;
+}
+ul.player {
+    width: 150px;
+    background-color: darkred;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+ul.player li {
+    border-bottom: 1px solid black;
+    color: #888c8c;
+    padding: 9px;
+    cursor: pointer;
+    list-style: none;
+}
+
+ul.player li:hover {
+    background-color: #475B62;
+    color: #FCF4DC;
+}
+
+ul.player li#playing {
+    color: #6690d8;
+    font-weight: bold;
+}
+
+ul.player li#paused {
+    color: #FFF;
+    font-weight: bold;
+}
