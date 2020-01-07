@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    color: yellow;
+}
+h1{
+    font: 32px "Impact";
+    text-align: center;
+}
+.button{
+    background-color: orange;
+    font: 16px "Arial Black";
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    width: 50px;
+}
+.input{
+    width: 100%;
+}
+.center{
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}

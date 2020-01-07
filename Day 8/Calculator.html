@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body>
+<table class="center" bgcolor="#708090" border="2" bordercolor="white" width="500">
+    <tr>
+        <td colspan="2">
+            <h1>Calculator</h1>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <input class="input" type="text" id="calculator">
+        </td>
+    </tr>
+    <tr align="center">
+        <td>
+            <button class="button" id="1" onclick="calculate(this.id)">1</button>
+            <button class="button" id="2" onclick="calculate(this.id)">2</button>
+            <button class="button" id="3" onclick="calculate(this.id)">3</button>
+            <br>
+            <button class="button" id="4" onclick="calculate(this.id)">4</button>
+            <button class="button" id="5" onclick="calculate(this.id)">5</button>
+            <button class="button" id="6" onclick="calculate(this.id)">6</button>
+            <br>
+            <button class="button" id="7" onclick="calculate(this.id)">7</button>
+            <button class="button" id="8" onclick="calculate(this.id)">8</button>
+            <button class="button" id="9" onclick="calculate(this.id)">9</button>
+        </td>
+        <td>
+            <button class="button" id="+" onclick="calculate(this.id)">+</button>
+            <button class="button" id="-" onclick="calculate(this.id)">-</button>
+            <br>
+            <button class="button" id="/" onclick="calculate(this.id)">/</button>
+            <button class="button" id="*" onclick="calculate(this.id)">*</button>
+            <br>
+            <button class="button" id="=" onclick="calculate(this.id)">=</button>
+            <button class="button" id="c" onclick="calculate(this.id)">C</button>
+        </td>
+    </tr>
+</table>
+<script src="scripts/calculator.js"></script>
+</body>
+</html>
