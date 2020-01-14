@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="scripts/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="scripts/game.js"></script></head>
+<body>
+<div class="center">
+    <h1>Hangman!</h1>
+    <div class="row">
+        <div class="col-md-6 gameplay-column">
+            <div id="youwin-image"><h2>You Win!</h2></div>
+            <div id="gameover-image"><h2>You Lose!</h2></div>
+<h2 id="pressKeyTryAgain">Press any key to try again</h2>
+            <img id="hangmanImage" src="" alt="" />
+        </div>
+        <div class="col-md-6 gamplay-column">
+            <h2>Press Any Key to Get Started!</h2>
+            <h4>Wins</h4>
+            <h5 id="totalWins"></h5>
+            <h4>Current Word</h4>
+            <h3 id="currentWord"></h3>
+            <h4>Guesses Remaining</h4>
+            <h6 id="remainingGuesses"></h6>
+            <h4>Letters Guessed</h4>
+            <h3 id="guessedLetters"></h3>
+        </div>
+    </div>
+    <script>
+        resetGame();
+        updateDisplay();
+    </script>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: greenyellow;
+}
+h1{
+    font: 32px "Magneto";
+    font-weight: bold;
+}
+.center{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+h1,h2,h3,
+h4,h5,h6 {
+    padding: 5px;
+    background-color: rgba(101,155,242,.2);
+}
+#title-image, #gameover-image, #youwin-image{
+    display: block;
+    margin: 0 auto;
+}
+
+#currentWord {
+    letter-spacing: 10px;
+}
+
+#pressKeyTryAgain,
+#gameover-image,
+#youwin-image { display: none;}
+.gameplay-column {
+    padding-top: 20px;
+    border: 3px dashed #fff;
+    text-align: center;
+    margin-top: 20px;
+    min-height: 500px;
+    background-color: rgba(255, 255, 255, .3);
+}
