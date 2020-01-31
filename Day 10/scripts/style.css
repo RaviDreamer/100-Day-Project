@@ -1,0 +1,36 @@
+body{
+    background-color: aliceblue;
+}
+.container{
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.eightball{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    border-radius: 50%;
+  }
+.fortune{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 200px solid blue;
+    position: relative;
+    left: 150px;
+    top: 150px;
+}
+.input{
+    width: 100%
+}
+.reading{
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: relative;
+    display: table-cell;
+    bottom: 150px;
+    right: 25px;
+}
